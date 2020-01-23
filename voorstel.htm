@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+	<style>
+		.HeroPanel-bg {
+			background: url(../static/media/gent.jpg) no-repeat 100% 0 !important;
+			background-size: cover !important;
+			filter: brightness(90%);
+		}
+	</style>
+	<style type="text/css" data-styled-components="liKdQs" data-styled-components-is-local="true">
+		/* sc-component-id: sc-bdVaJa */
+		.sc-bdVaJa {}
+
+		.liKdQs .typed-cursor {
+			opacity: 1;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			animation: typedjsBlink 0.7s infinite;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			animation: typedjsBlink 0.7s infinite;
+		}
+
+		@-webkit-keyframes typedjsBlink {
+			50% {
+				opacity: 0.0;
+			}
+		}
+
+		@keyframes typedjsBlink {
+			50% {
+				opacity: 0.0;
+			}
+		}
+
+		@-webkit-keyframes typedjsBlink {
+			.liKdQs 0% {
+				opacity: 1;
+			}
+
+			.liKdQs 50% {
+				opacity: 0.0;
+			}
+
+			.liKdQs 100% {
+				opacity: 1;
+			}
+		}
+
+		.liKdQs .typed-fade-out {
+			opacity: 0;
+			-webkit-transition: opacity .25s;
+			transition: opacity .25s;
+			-webkit-animation: 0;
+			-webkit-animation: 0;
+			animation: 0;
+		}
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style id="react-tooltip">
+		.__react_component_tooltip {
+			border-radius: 3px;
+			display: inline-block;
+			font-size: 13px;
+			left: -999em;
+			opacity: 0;
+			padding: 8px 21px;
+			position: fixed;
+			pointer-events: none;
+			transition: opacity 0.3s ease-out;
+			top: -999em;
+			visibility: hidden;
+			z-index: 999
+		}
+
+		.__react_component_tooltip:before,
+		.__react_component_tooltip:after {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute
+		}
+
+		.__react_component_tooltip.show {
+			opacity: 0.9;
+			margin-top: 0px;
+			margin-left: 0px;
+			visibility: visible
+		}
+
+		.__react_component_tooltip.type-dark {
+			color: #fff;
+			background-color: #222
+		}
+
+		.__react_component_tooltip.type-dark.place-top:after {
+			border-top-color: #222;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-dark.place-bottom:after {
+			border-bottom-color: #222;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-dark.place-left:after {
+			border-left-color: #222;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-dark.place-right:after {
+			border-right-color: #222;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-dark.border {
+			border: 1px solid #fff
+		}
+
+		.__react_component_tooltip.type-dark.border.place-top:before {
+			border-top: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-dark.border.place-bottom:before {
+			border-bottom: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-dark.border.place-left:before {
+			border-left: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-dark.border.place-right:before {
+			border-right: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-success {
+			color: #fff;
+			background-color: #8DC572
+		}
+
+		.__react_component_tooltip.type-success.place-top:after {
+			border-top-color: #8DC572;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-success.place-bottom:after {
+			border-bottom-color: #8DC572;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-success.place-left:after {
+			border-left-color: #8DC572;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-success.place-right:after {
+			border-right-color: #8DC572;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-success.border {
+			border: 1px solid #fff
+		}
+
+		.__react_component_tooltip.type-success.border.place-top:before {
+			border-top: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-success.border.place-bottom:before {
+			border-bottom: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-success.border.place-left:before {
+			border-left: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-success.border.place-right:before {
+			border-right: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-warning {
+			color: #fff;
+			background-color: #F0AD4E
+		}
+
+		.__react_component_tooltip.type-warning.place-top:after {
+			border-top-color: #F0AD4E;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-warning.place-bottom:after {
+			border-bottom-color: #F0AD4E;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-warning.place-left:after {
+			border-left-color: #F0AD4E;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-warning.place-right:after {
+			border-right-color: #F0AD4E;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-warning.border {
+			border: 1px solid #fff
+		}
+
+		.__react_component_tooltip.type-warning.border.place-top:before {
+			border-top: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-warning.border.place-bottom:before {
+			border-bottom: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-warning.border.place-left:before {
+			border-left: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-warning.border.place-right:before {
+			border-right: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-error {
+			color: #fff;
+			background-color: #BE6464
+		}
+
+		.__react_component_tooltip.type-error.place-top:after {
+			border-top-color: #BE6464;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-error.place-bottom:after {
+			border-bottom-color: #BE6464;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-error.place-left:after {
+			border-left-color: #BE6464;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-error.place-right:after {
+			border-right-color: #BE6464;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-error.border {
+			border: 1px solid #fff
+		}
+
+		.__react_component_tooltip.type-error.border.place-top:before {
+			border-top: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-error.border.place-bottom:before {
+			border-bottom: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-error.border.place-left:before {
+			border-left: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-error.border.place-right:before {
+			border-right: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-info {
+			color: #fff;
+			background-color: #337AB7
+		}
+
+		.__react_component_tooltip.type-info.place-top:after {
+			border-top-color: #337AB7;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-info.place-bottom:after {
+			border-bottom-color: #337AB7;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-info.place-left:after {
+			border-left-color: #337AB7;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-info.place-right:after {
+			border-right-color: #337AB7;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-info.border {
+			border: 1px solid #fff
+		}
+
+		.__react_component_tooltip.type-info.border.place-top:before {
+			border-top: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-info.border.place-bottom:before {
+			border-bottom: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-info.border.place-left:before {
+			border-left: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-info.border.place-right:before {
+			border-right: 8px solid #fff
+		}
+
+		.__react_component_tooltip.type-light {
+			color: #222;
+			background-color: #fff
+		}
+
+		.__react_component_tooltip.type-light.place-top:after {
+			border-top-color: #fff;
+			border-top-style: solid;
+			border-top-width: 6px
+		}
+
+		.__react_component_tooltip.type-light.place-bottom:after {
+			border-bottom-color: #fff;
+			border-bottom-style: solid;
+			border-bottom-width: 6px
+		}
+
+		.__react_component_tooltip.type-light.place-left:after {
+			border-left-color: #fff;
+			border-left-style: solid;
+			border-left-width: 6px
+		}
+
+		.__react_component_tooltip.type-light.place-right:after {
+			border-right-color: #fff;
+			border-right-style: solid;
+			border-right-width: 6px
+		}
+
+		.__react_component_tooltip.type-light.border {
+			border: 1px solid #222
+		}
+
+		.__react_component_tooltip.type-light.border.place-top:before {
+			border-top: 8px solid #222
+		}
+
+		.__react_component_tooltip.type-light.border.place-bottom:before {
+			border-bottom: 8px solid #222
+		}
+
+		.__react_component_tooltip.type-light.border.place-left:before {
+			border-left: 8px solid #222
+		}
+
+		.__react_component_tooltip.type-light.border.place-right:before {
+			border-right: 8px solid #222
+		}
+
+		.__react_component_tooltip.place-top {
+			margin-top: -10px
+		}
+
+		.__react_component_tooltip.place-top:before {
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			bottom: -8px;
+			left: 50%;
+			margin-left: -10px
+		}
+
+		.__react_component_tooltip.place-top:after {
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			bottom: -6px;
+			left: 50%;
+			margin-left: -8px
+		}
+
+		.__react_component_tooltip.place-bottom {
+			margin-top: 10px
+		}
+
+		.__react_component_tooltip.place-bottom:before {
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			top: -8px;
+			left: 50%;
+			margin-left: -10px
+		}
+
+		.__react_component_tooltip.place-bottom:after {
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			top: -6px;
+			left: 50%;
+			margin-left: -8px
+		}
+
+		.__react_component_tooltip.place-left {
+			margin-left: -10px
+		}
+
+		.__react_component_tooltip.place-left:before {
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			right: -8px;
+			top: 50%;
+			margin-top: -5px
+		}
+
+		.__react_component_tooltip.place-left:after {
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			right: -6px;
+			top: 50%;
+			margin-top: -4px
+		}
+
+		.__react_component_tooltip.place-right {
+			margin-left: 10px
+		}
+
+		.__react_component_tooltip.place-right:before {
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			left: -8px;
+			top: 50%;
+			margin-top: -5px
+		}
+
+		.__react_component_tooltip.place-right:after {
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			left: -6px;
+			top: 50%;
+			margin-top: -4px
+		}
+
+		.__react_component_tooltip .multi-line {
+			display: block;
+			padding: 2px 0px;
+			text-align: center
+		}
+	</style>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta name="theme-color" content="#000000">
+	<meta name="google-site-verification" content="zV7d4mNrGuel1DdE39K_I8tPs3BU3cj7oPiywXa0rhc">
+	<meta name="description" content="Rentassist, eerste Airbnb conciërgeservice in België">
+	<meta name="keywords" content="conciergerie,airbnb,sleutelbeheer,verhuur,inkomsten,schatting">
+	<meta property="og:title" content="Rentassist">
+	<meta property="og:url" content="http://www.rentassist.be/">
+	<meta property="og:image" content="https://www.rentassist.be/fb-img4.png">
+	<meta property="og:site_name" content="Rentassist">
+	<meta property="og:description" content="Rentassist, eerste Airbnb conciërgeservice in België">
+	<link rel="manifest" href="https://www.rentassist.be/manifest.json">
+	<link rel="manifest" href="https://www.rentassist.be/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="files/css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>Rentassist, eerste Airbnb conciërgeservice in België</title>
+	<link href="files/main.95a5e6c7.css" rel="stylesheet">
+	<style type="text/css" data-styled-components="liKdQs" data-styled-components-is-local="true">
+		/* sc-component-id: sc-bdVaJa */
+		.sc-bdVaJa {}
+
+		.liKdQs .typed-cursor {
+			opacity: 1;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			animation: typedjsBlink 0.7s infinite;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			-webkit-animation: typedjsBlink 0.7s infinite;
+			animation: typedjsBlink 0.7s infinite;
+		}
+
+		@-webkit-keyframes typedjsBlink {
+			50% {
+				opacity: 0.0;
+			}
+		}
+
+		@keyframes typedjsBlink {
+			50% {
+				opacity: 0.0;
+			}
+		}
+
+		@-webkit-keyframes typedjsBlink {
+			.liKdQs 0% {
+				opacity: 1;
+			}
+
+			.liKdQs 50% {
+				opacity: 0.0;
+			}
+
+			.liKdQs 100% {
+				opacity: 1;
+			}
+		}
+
+		.liKdQs .typed-fade-out {
+			opacity: 0;
+			-webkit-transition: opacity .25s;
+			transition: opacity .25s;
+			-webkit-animation: 0;
+			-webkit-animation: 0;
+			animation: 0;
+		}
+	</style>
+	<style type="text/css" data-glamor=""></style>
+
+	<style type="text/css">
+		iframe#_hjRemoteVarsFrame {
+			display: none !important;
+			width: 1px !important;
+			height: 1px !important;
+			opacity: 0 !important;
+			pointer-events: none !important;
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,600,700);
+
+		body.slaask-iframe {
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			-webkit-overflow-scrolling: touch
+		}
+
+		body.slaask-iframe>:not(.slaask-alert):not(.slaask-tooltip):not(.slaask-topbar):not(.slaask-message) {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			position: fixed;
+			top: 0;
+			left: 0
+		}
+
+		.slaask-alert,
+		.slaask-alert-overlay,
+		.slaask-button,
+		.slaask-gradient,
+		.slaask-message,
+		.slaask-tooltip,
+		.slaask-topbar,
+		.slaask-widget {
+			line-height: 1
+		}
+
+		.slaask-alert a,
+		.slaask-alert-overlay a,
+		.slaask-button a,
+		.slaask-gradient a,
+		.slaask-message a,
+		.slaask-tooltip a,
+		.slaask-topbar a,
+		.slaask-widget a {
+			color: currentColor;
+			text-decoration: none
+		}
+
+		.slaask-alert *,
+		.slaask-alert-overlay *,
+		.slaask-button *,
+		.slaask-gradient *,
+		.slaask-message *,
+		.slaask-tooltip *,
+		.slaask-topbar *,
+		.slaask-widget * {
+			-webkit-tap-highlight-color: transparent !important
+		}
+
+		.slaask-component,
+		body.slaask-iframe {
+			font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-smoothing: antialiased;
+			-webkit-font-smoothing: antialiased;
+			color: #444;
+			height: initial
+		}
+
+		.slaask-button .powered-by-text *,
+		.slaask-gradient .powered-by-text *,
+		.slaask-message .powered-by-text *,
+		.slaask-tooltip .powered-by-text *,
+		.slaask-widget .powered-by-text * {
+			font-size: 12px;
+			color: #888da8 !important;
+			font-weight: 400;
+			text-decoration: none
+		}
+
+		.slaask-button .powered-by-text a .slaask-sla,
+		.slaask-gradient .powered-by-text a .slaask-sla,
+		.slaask-message .powered-by-text a .slaask-sla,
+		.slaask-tooltip .powered-by-text a .slaask-sla,
+		.slaask-widget .powered-by-text a .slaask-sla {
+			color: #40464d !important
+		}
+
+		.slaask-button .powered-by-text a .slaask-ask,
+		.slaask-gradient .powered-by-text a .slaask-ask,
+		.slaask-message .powered-by-text a .slaask-ask,
+		.slaask-tooltip .powered-by-text a .slaask-ask,
+		.slaask-widget .powered-by-text a .slaask-ask {
+			color: #e01765 !important
+		}
+
+		.slaask-button .slaask-message-header-cross,
+		.slaask-gradient .slaask-message-header-cross,
+		.slaask-message .slaask-message-header-cross,
+		.slaask-tooltip .slaask-message-header-cross,
+		.slaask-widget .slaask-message-header-cross {
+			float: right;
+			height: 16px;
+			margin-top: 0;
+			width: 12px;
+			padding: 0;
+			cursor: pointer
+		}
+
+		.slaask-button .slaask-alert-content-box-box pre,
+		.slaask-button .slaask-messages li .ctext-wrap pre,
+		.slaask-gradient .slaask-alert-content-box-box pre,
+		.slaask-gradient .slaask-messages li .ctext-wrap pre,
+		.slaask-message .slaask-alert-content-box-box pre,
+		.slaask-message .slaask-messages li .ctext-wrap pre,
+		.slaask-tooltip .slaask-alert-content-box-box pre,
+		.slaask-tooltip .slaask-messages li .ctext-wrap pre,
+		.slaask-widget .slaask-alert-content-box-box pre,
+		.slaask-widget .slaask-messages li .ctext-wrap pre {
+			height: auto;
+			overflow: auto;
+			word-break: normal !important;
+			word-wrap: normal !important;
+			white-space: pre !important;
+			display: block;
+			padding: 9.5px;
+			margin: 0;
+			line-height: 1.42857143;
+			color: #333;
+			background-color: #fff;
+			border: 0;
+			box-shadow: 0 1px 2px 0 rgba(234, 236, 238, .8);
+			border-radius: 20px
+		}
+
+		.slaask-message *,
+		.slaask-widget * {
+			box-sizing: content-box;
+			text-align: left;
+			font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif !important
+		}
+
+		.slaask-message.slaask-widget *,
+		.slaask-widget.slaask-widget * {
+			letter-spacing: initial
+		}
+
+		.slaask-message a:link,
+		.slaask-message a:visited,
+		.slaask-widget a:link,
+		.slaask-widget a:visited {
+			color: currentColor
+		}
+
+		.slaask-message .slaask-whitelabel,
+		.slaask-widget .slaask-whitelabel {
+			font-size: 12px
+		}
+
+		.slaask-message .slaask-whitelabel a,
+		.slaask-widget .slaask-whitelabel a {
+			padding: 0 20px
+		}
+
+		.slaask-message .slaask-whitelabel a .slaask-sla,
+		.slaask-widget .slaask-whitelabel a .slaask-sla {
+			color: #40464d !important
+		}
+
+		.slaask-message .slaask-whitelabel a .slaask-ask,
+		.slaask-widget .slaask-whitelabel a .slaask-ask {
+			color: #e01765 !important
+		}
+
+		.slaask-message .slaask-whitelabel a,
+		.slaask-message .slaask-whitelabel a *,
+		.slaask-widget .slaask-whitelabel a,
+		.slaask-widget .slaask-whitelabel a * {
+			cursor: pointer
+		}
+
+		.slaask-message .slaask-whitelabel *,
+		.slaask-widget .slaask-whitelabel * {
+			font-size: 12px;
+			color: #888da8 !important;
+			font-weight: 400;
+			text-decoration: none;
+			font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+			text-align: center
+		}
+
+		.slaask-message.slaask-message .slaask-whitelabel a,
+		.slaask-message.slaask-widget .slaask-whitelabel a.slaask-no-padding,
+		.slaask-widget.slaask-message .slaask-whitelabel a,
+		.slaask-widget.slaask-widget .slaask-whitelabel a.slaask-no-padding {
+			padding: 0 !important
+		}
+
+		.slaask-message .button,
+		.slaask-message .slaask-btn,
+		.slaask-widget .button,
+		.slaask-widget .slaask-btn {
+			width: 100% !important;
+			padding: 9px 20px 10px 20px !important;
+			box-sizing: border-box !important;
+			font-size: 14px !important;
+			border: 1px solid #e6ecf5 !important;
+			border-radius: 20px !important;
+			background: #fff !important;
+			text-align: center !important;
+			min-width: 190px !important;
+			margin-top: 10px !important;
+			cursor: pointer !important;
+			display: block;
+			color: inherit !important;
+			-webkit-appearance: none
+		}
+
+		.slaask-message .button:hover,
+		.slaask-message .slaask-btn:hover,
+		.slaask-widget .button:hover,
+		.slaask-widget .slaask-btn:hover {
+			background-color: #fff
+		}
+
+		.slaask-message .button.slaask-btn-no,
+		.slaask-message .button.slaask-btn-yes,
+		.slaask-message .slaask-btn.slaask-btn-no,
+		.slaask-message .slaask-btn.slaask-btn-yes,
+		.slaask-widget .button.slaask-btn-no,
+		.slaask-widget .button.slaask-btn-yes,
+		.slaask-widget .slaask-btn.slaask-btn-no,
+		.slaask-widget .slaask-btn.slaask-btn-yes {
+			color: #fff;
+			width: 49% !important;
+			font-weight: 700;
+			float: left;
+			min-width: 0 !important
+		}
+
+		.slaask-message .button.slaask-btn-yes,
+		.slaask-message .slaask-btn.slaask-btn-yes,
+		.slaask-widget .button.slaask-btn-yes,
+		.slaask-widget .slaask-btn.slaask-btn-yes {
+			background-color: #fff !important;
+			color: #32b531 !important;
+			border-color: transparent !important;
+			font-size: 14px !important
+		}
+
+		.slaask-message .button.slaask-btn-no,
+		.slaask-message .slaask-btn.slaask-btn-no,
+		.slaask-widget .button.slaask-btn-no,
+		.slaask-widget .slaask-btn.slaask-btn-no {
+			background-color: #fff !important;
+			color: #ff3c7e !important;
+			border-color: transparent !important;
+			margin-left: 2%;
+			font-size: 14px !important
+		}
+
+		.slaask-hidden {
+			display: none !important
+		}
+
+		.slaask-border-radius {
+			border-radius: 6px !important
+		}
+
+		.youtube-preview-container {
+			position: relative !important;
+			cursor: pointer
+		}
+
+		.youtube-preview-container .ytp-large-play-button {
+			pointer-events: none;
+			position: absolute;
+			background: 0 0;
+			border: 0;
+			left: 50%;
+			top: 50%;
+			width: 68px;
+			height: 48px;
+			margin-left: -34px;
+			margin-top: -24px;
+			transition: opacity .25s cubic-bezier(0, 0, .2, 1);
+			z-index: 63
+		}
+
+		.youtube-preview-container .ytp-large-play-button svg {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%
+		}
+
+		.youtube-preview-container .ytp-large-play-button svg .ytp-large-play-button-bg {
+			transition: fill .1s cubic-bezier(.4, 0, 1, 1), fill-opacity .1s cubic-bezier(.4, 0, 1, 1);
+			fill: #212121;
+			fill-opacity: .8
+		}
+
+		.youtube-preview-container:hover .ytp-large-play-button svg .ytp-large-play-button-bg {
+			fill: red !important;
+			fill-opacity: 1 !important
+		}
+
+		.slaask-emoji {
+			display: inline !important;
+			height: 20px;
+			width: 20px;
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			vertical-align: text-bottom;
+			min-width: auto !important
+		}
+
+		.slaask-messages .ctext-wrap .emoji,
+		.slaask-messages .ctext-wrap .slaask-emoji,
+		.slaask-messages .ctext-wrap img.emoji,
+		.slaask-messages .ctext-wrap img.slaask-emoji,
+		.slaask-messages .ctext-wrap p .emoji,
+		.slaask-messages .ctext-wrap p .slaask-emoji,
+		.slaask-messages .ctext-wrap p img.emoji,
+		.slaask-messages .ctext-wrap p img.slaask-emoji,
+		.slaask-widget .emoji,
+		.slaask-widget .slaask-emoji,
+		.slaask-widget img.emoji,
+		.slaask-widget img.slaask-emoji,
+		.slaask-widget-header-title .emoji,
+		.slaask-widget-header-title .slaask-emoji,
+		.slaask-widget-header-title img.emoji,
+		.slaask-widget-header-title img.slaask-emoji,
+		.slaask-widget-notify-title .emoji,
+		.slaask-widget-notify-title .slaask-emoji,
+		.slaask-widget-notify-title img.emoji,
+		.slaask-widget-notify-title img.slaask-emoji,
+		body .emoji,
+		body .slaask-emoji,
+		body img.emoji,
+		body img.slaask-emoji {
+			display: inline !important;
+			height: 20px;
+			width: 20px;
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			vertical-align: text-bottom;
+			min-width: auto !important
+		}
+
+		.slaask-messages .ctext-wrap img:not(.slaask-emoji) {
+			border-radius: 6px
+		}
+
+		.slaask-emoji-big {
+			display: block !important;
+			height: 60px;
+			width: 60px;
+			min-width: auto !important;
+			max-width: auto !important;
+			border: 0 !important;
+			margin: 0 !important;
+			padding: 0 !important
+		}
+
+		@-webkit-keyframes slaask-show-alert {
+			0% {
+				transform: translateY(-100px)
+			}
+
+			100% {
+				transform: translateY(0)
+			}
+		}
+
+		@keyframes slaask-show-alert {
+			0% {
+				transform: translateY(-100px)
+			}
+
+			100% {
+				transform: translateY(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-appears-fast {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				transform: scale(.5);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-appears-fast {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				transform: scale(.5);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-cd-qty-leave {
+			0% {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(-50%) translateY(-50%)
+			}
+
+			100% {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-50%) translateY(-100%)
+			}
+		}
+
+		@keyframes slaask-cd-qty-leave {
+			0% {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(-50%) translateY(-50%)
+			}
+
+			100% {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-50%) translateY(-100%)
+			}
+		}
+
+		@-webkit-keyframes slaask-boomerman {
+			0% {
+				transform: scale3d(1, 1, 1);
+				opacity: 1
+			}
+
+			100% {
+				transform: scale3d(2, 2, 2);
+				opacity: 0
+			}
+		}
+
+		@keyframes slaask-boomerman {
+			0% {
+				transform: scale3d(1, 1, 1);
+				opacity: 1
+			}
+
+			100% {
+				transform: scale3d(2, 2, 2);
+				opacity: 0
+			}
+		}
+
+		@-webkit-keyframes slaask-message-text-appear {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-message-text-appear {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-message-appear {
+			0% {
+				opacity: 0;
+				transform: scale(.8)
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1)
+			}
+		}
+
+		@keyframes slaask-message-appear {
+			0% {
+				opacity: 0;
+				transform: scale(.8)
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1)
+			}
+		}
+
+		@-webkit-keyframes slaask-scale {
+			0% {
+				opacity: 0;
+				transform: translate3d(0, 40px, 0) scale3d(.1, .6, 1)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+			}
+		}
+
+		@keyframes slaask-scale {
+			0% {
+				opacity: 0;
+				transform: translate3d(0, 40px, 0) scale3d(.1, .6, 1)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+			}
+		}
+
+		@-webkit-keyframes slaask-topbar-slide-top {
+			0% {
+				transform: translate3d(0, -100%, 0)
+			}
+
+			100% {
+				transform: translate3d(0, 0, 0)
+			}
+		}
+
+		@keyframes slaask-topbar-slide-top {
+			0% {
+				transform: translate3d(0, -100%, 0)
+			}
+
+			100% {
+				transform: translate3d(0, 0, 0)
+			}
+		}
+
+		@-webkit-keyframes slaask-appears {
+			0% {
+				opacity: 0
+			}
+
+			66% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-appears {
+			0% {
+				opacity: 0
+			}
+
+			66% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-appears-input {
+			0% {
+				opacity: 0
+			}
+
+			33% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-appears-input {
+			0% {
+				opacity: 0
+			}
+
+			33% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-appears-full {
+			0% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-appears-full {
+			0% {
+				opacity: 0
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-blinker {
+			0% {
+				opacity: 1
+			}
+
+			40% {
+				opacity: 1
+			}
+
+			50% {
+				opacity: 0
+			}
+
+			60% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-blinker {
+			0% {
+				opacity: 1
+			}
+
+			40% {
+				opacity: 1
+			}
+
+			50% {
+				opacity: 0
+			}
+
+			60% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-appears-fast-triggers {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				transform: scale(.5);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: .4
+			}
+		}
+
+		@keyframes slaask-appears-fast-triggers {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				transform: scale(.5);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: .4
+			}
+		}
+
+		@-webkit-keyframes slaask-slide {
+			0% {
+				transform: translateX(10%);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateX(0);
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-slide {
+			0% {
+				transform: translateX(10%);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateX(0);
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-slide-left {
+			0% {
+				transform: translateX(-10%);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateX(0);
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-slide-left {
+			0% {
+				transform: translateX(-10%);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateX(0);
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-slide-to-right {
+			0% {
+				opacity: 0;
+				transform: translateX(8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-slide-to-right {
+			0% {
+				opacity: 0;
+				transform: translateX(8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-slide-to-top {
+			0% {
+				opacity: 0;
+				transform: translateY(15px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+		}
+
+		@keyframes slaask-slide-to-top {
+			0% {
+				opacity: 0;
+				transform: translateY(15px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-unfold-to-top {
+			0% {
+				opacity: 0;
+				transform: translateY(40px) scaleY(.95)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0) scaleY(1)
+			}
+		}
+
+		@keyframes slaask-unfold-to-top {
+			0% {
+				opacity: 0;
+				transform: translateY(40px) scaleY(.95)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0) scaleY(1)
+			}
+		}
+
+		@-webkit-keyframes slaask-slide-to-bottom {
+			0% {
+				transform: translateY(-15);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateY(0);
+				opacity: 1
+			}
+		}
+
+		@keyframes slaask-slide-to-bottom {
+			0% {
+				transform: translateY(-15);
+				opacity: 0
+			}
+
+			100% {
+				transform: translateY(0);
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes slaask-slide-to-left {
+			0% {
+				opacity: 0;
+				transform: translateX(-8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-slide-to-left {
+			0% {
+				opacity: 0;
+				transform: translateX(-8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-topbar-slide {
+			0% {
+				top: 0
+			}
+
+			100% {
+				top: 54px
+			}
+		}
+
+		@keyframes slaask-topbar-slide {
+			0% {
+				top: 0
+			}
+
+			100% {
+				top: 54px
+			}
+		}
+
+		@-webkit-keyframes slaask-many-alert {
+			0% {
+				height: 0
+			}
+
+			100% {
+				height: 32px
+			}
+		}
+
+		@keyframes slaask-many-alert {
+			0% {
+				height: 0
+			}
+
+			100% {
+				height: 32px
+			}
+		}
+
+		@-webkit-keyframes slaask-typing-dot {
+			0% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+
+			30% {
+				opacity: .25;
+				transform: translateY(-5px)
+			}
+
+			60% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+
+			100% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+		}
+
+		@keyframes slaask-typing-dot {
+			0% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+
+			30% {
+				opacity: .25;
+				transform: translateY(-5px)
+			}
+
+			60% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+
+			100% {
+				opacity: .18;
+				transform: translateY(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-conversation-slide {
+			0% {
+				opacity: 0;
+				transform: translateX(-8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-conversation-slide {
+			0% {
+				opacity: 0;
+				transform: translateX(-8px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-new-conversation-slide {
+			0% {
+				opacity: 0;
+				transform: translateY(8px) translateX(-50%) scale(.96)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0) translateX(-50%) scale(1)
+			}
+		}
+
+		@keyframes slaask-new-conversation-slide {
+			0% {
+				opacity: 0;
+				transform: translateY(8px) translateX(-50%) scale(.96)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0) translateX(-50%) scale(1)
+			}
+		}
+
+		@-webkit-keyframes slaask-widget-card-slide-from-left {
+			0% {
+				opacity: 0;
+				transform: translateX(-60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-widget-card-slide-from-left {
+			0% {
+				opacity: 0;
+				transform: translateX(-60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-widget-card-slide-from-right {
+			0% {
+				opacity: 0;
+				transform: translateX(60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-widget-card-slide-from-right {
+			0% {
+				opacity: 0;
+				transform: translateX(60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-cd-qty-enter {
+			0% {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-50%) translateY(0)
+			}
+
+			100% {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(-50%) translateY(-50%)
+			}
+		}
+
+		@keyframes slaask-cd-qty-enter {
+			0% {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-50%) translateY(0)
+			}
+
+			100% {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(-50%) translateY(-50%)
+			}
+		}
+
+		@-webkit-keyframes slaask-grow {
+			0% {
+				display: none;
+				opacity: 0
+			}
+
+			1% {
+				display: inline-block;
+				opacity: 0;
+				transform: scale(0)
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1)
+			}
+		}
+
+		@keyframes slaask-grow {
+			0% {
+				display: none;
+				opacity: 0
+			}
+
+			1% {
+				display: inline-block;
+				opacity: 0;
+				transform: scale(0)
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1)
+			}
+		}
+
+		@-webkit-keyframes slaask-widget-right-container-slide {
+			0% {
+				opacity: 0;
+				transform: translateX(60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@keyframes slaask-widget-right-container-slide {
+			0% {
+				opacity: 0;
+				transform: translateX(60px)
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0)
+			}
+		}
+
+		@-webkit-keyframes slaask-loader-spin {
+			0% {
+				transform: rotate(0)
+			}
+
+			100% {
+				transform: rotate(1turn)
+			}
+		}
+
+		@keyframes slaask-loader-spin {
+			0% {
+				transform: rotate(0)
+			}
+
+			100% {
+				transform: rotate(1turn)
+			}
+		}
+
+		@-webkit-keyframes asktech-reconnecting-pulse {
+			0% {
+				transform: scale(0);
+				opacity: 0
+			}
+
+			10% {
+				transform: scale(.125);
+				opacity: .7
+			}
+
+			80% {
+				transform: scale(1);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: 0
+			}
+		}
+
+		@keyframes asktech-reconnecting-pulse {
+			0% {
+				transform: scale(0);
+				opacity: 0
+			}
+
+			10% {
+				transform: scale(.125);
+				opacity: .7
+			}
+
+			80% {
+				transform: scale(1);
+				opacity: 0
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: 0
+			}
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		body .slaask-alert {
+			z-index: 2147483647;
+			position: fixed;
+			width: 700px;
+			left: 50%;
+			top: 100px;
+			margin-left: -350px;
+			-webkit-animation-name: slaask-show-alert;
+			animation-name: slaask-show-alert;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			border-radius: 20px
+		}
+
+		body .slaask-alert-overlay {
+			z-index: 2147483646;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .78)
+		}
+
+		body .slaask-button {
+			z-index: 2147483644;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			font-size: 72px;
+			width: 1em;
+			height: 1em;
+			max-width: 1em;
+			max-height: 1em;
+			box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16) !important;
+			border-radius: 50%;
+			-webkit-animation-name: slaask-appears-fast;
+			animation-name: slaask-appears-fast;
+			-webkit-animation-duration: .25s;
+			animation-duration: .25s;
+			transition: all .25s cubic-bezier(.23, 1, .32, 1);
+			background-color: #fff
+		}
+
+		body .slaask-button.slaask-left {
+			left: 20px;
+			right: initial
+		}
+
+		body .slaask-button:hover {
+			box-shadow: 0 2px 8px rgba(0, 0, 0, .09), 0 4px 40px rgba(0, 0, 0, .24) !important
+		}
+
+		body .slaask-gradient {
+			z-index: 2147483547;
+			-webkit-animation-name: slaask-appears-full;
+			animation-name: slaask-appears-full;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+			background-color: transparent;
+			width: 520px;
+			height: 520px;
+			content: "";
+			background: radial-gradient(at right bottom, rgba(29, 39, 50, .17) 0, rgba(29, 39, 50, 0) 70%)
+		}
+
+		body .slaask-gradient.slaask-left {
+			left: 0 !important;
+			background: radial-gradient(at left bottom, rgba(29, 39, 50, .17) 0, rgba(29, 39, 50, 0) 70%)
+		}
+
+		body .slaask-message {
+			z-index: 2147483644;
+			position: fixed;
+			top: auto;
+			bottom: 112px;
+			right: 20px;
+			width: 300px;
+			max-width: 300px;
+			margin: 0;
+			background: #fff;
+			box-shadow: rgba(0, 0, 0, .16) 0 5px 40px;
+			border-radius: 20px !important;
+			-webkit-animation: slaask-message-appear 250ms ease 0s 1 normal none running;
+			animation: slaask-message-appear 250ms ease 0s 1 normal none running;
+			box-sizing: border-box;
+			cursor: pointer
+		}
+
+		body .slaask-message.slaask-left {
+			right: initial;
+			left: 20px;
+			border-bottom-left-radius: 0 !important;
+			transform-origin: 0 100%
+		}
+
+		body .slaask-message:not(.slaask-left) {
+			border-bottom-right-radius: 0 !important;
+			transform-origin: 100% 100%
+		}
+
+		body .slaask-message.slaask-iframe-container {
+			padding: 0
+		}
+
+		body .slaask-tooltip {
+			z-index: 2147483644;
+			top: 0;
+			left: 0;
+			position: absolute;
+			display: block;
+			max-width: none;
+			max-height: none;
+			border: none;
+			resize: none;
+			opacity: 1;
+			width: 320px
+		}
+
+		body .slaask-topbar {
+			z-index: 18004;
+			box-sizing: border-box !important;
+			transform: translate3d(0, 0, 0) !important;
+			visibility: visible !important;
+			opacity: 1 !important;
+			pointer-events: all !important;
+			-webkit-animation-name: slaask-topbar-slide-top;
+			animation-name: slaask-topbar-slide-top;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s;
+			position: fixed;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			max-width: 100%
+		}
+
+		body .slaask-widget {
+			z-index: 2147483645;
+			box-shadow: rgba(0, 0, 0, .16) 0 5px 40px;
+			position: fixed;
+			width: 368px;
+			-webkit-animation-name: slaask-slide;
+			animation-name: slaask-slide;
+			-webkit-animation-duration: .25s;
+			animation-duration: .25s;
+			box-sizing: border-box;
+			overflow: hidden
+		}
+
+		body .slaask-widget.slaask-embedded-widget {
+			-webkit-animation-name: none !important;
+			animation-name: none !important;
+			-webkit-animation-duration: 0s;
+			animation-duration: 0s
+		}
+
+		body .slaask-widget.slaask-mini {
+			top: auto;
+			right: 20px;
+			bottom: 120px;
+			border-radius: 20px;
+			height: 670px;
+			max-height: calc(95% - 120px);
+			-webkit-animation-name: slaask-unfold-to-top;
+			animation-name: slaask-unfold-to-top
+		}
+
+		body .slaask-widget.slaask-mini.slaask-left {
+			right: initial;
+			left: 20px;
+			-webkit-animation-name: slaask-slide-left;
+			animation-name: slaask-slide-left
+		}
+
+		body .slaask-widget:not(.slaask-mini) {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%
+		}
+
+		body .slaask-widget:not(.slaask-mini).slaask-left {
+			right: initial;
+			left: 0;
+			-webkit-animation-name: slaask-slide-left;
+			animation-name: slaask-slide-left
+		}
+
+		@media only screen and (max-width:460px) {
+			body .slaask-widget {
+				width: 100%
+			}
+
+			body .slaask-widget.slaask-mini,
+			body .slaask-widget.slaask-mini.slaask-left {
+				top: 0;
+				right: 0;
+				left: 0;
+				width: 100%;
+				border-radius: 0 0 10px 10px;
+				height: initial;
+				max-height: 100%
+			}
+
+			body .slaask-message {
+				width: 90%;
+				max-width: 90%;
+				right: 5% !important;
+				left: 5% !important
+			}
+		}
+
+		@media only screen and (max-width:750px) {
+			body .slaask-alert {
+				left: 5%;
+				width: 90%;
+				margin-left: 0
+			}
+		}
+
+		@media (max-width:15em) {
+			body .slaask-topbar {
+				display: none
+			}
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		.slaask-fixed {
+			position: fixed !important
+		}
+
+		body.slaask-fixed {
+			width: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			height: 100% !important
+		}
+
+		.slaask-iframe {
+			border: none;
+			background: 0 0;
+			width: 100%;
+			height: 100%;
+			-webkit-tap-highlight-color: transparent
+		}
+
+		.slaask-iframe-container {
+			overflow: hidden
+		}
+
+		html.slaask-moved-for-topbar {
+			position: relative !important
+		}
+
+		html .slaask-moved-for-topbar {
+			-webkit-animation-name: slaask-topbar-slide;
+			animation-name: slaask-topbar-slide;
+			-webkit-animation-duration: .3s;
+			animation-duration: .3s
+		}
+
+		html .slaask-moved-for-topbar.slaask-topbar {
+			top: 0
+		}
+
+		.slaask-changelog-button {
+			display: block !important;
+			position: absolute !important;
+			bottom: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			top: 0 !important;
+			width: 100% !important;
+			height: 100% !important
+		}
+
+		.slaask-changelog-button #slaask-changelog-badge {
+			display: block;
+			border-radius: 20px;
+			height: 14px;
+			width: 14px;
+			color: #fff;
+			text-align: center;
+			line-height: 16px;
+			font-size: 11px;
+			cursor: pointer;
+			position: absolute;
+			top: 10px;
+			right: -12px;
+			left: auto;
+			opacity: 0;
+			transform: scale(0);
+			transition: all .3s !important
+		}
+
+		.slaask-changelog-button #slaask-changelog-badge.slaask-changelog-badge-visible {
+			opacity: 1;
+			transform: scale(1)
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		.slaask-button {
+			text-align: left !important
+		}
+
+		.slaask-button.slaask-mini.slaask-opened {
+			transition-duration: 0s
+		}
+
+		.slaask-button.slaask-mini.slaask-opened .slaask-button-image {
+			opacity: 0;
+			transition-delay: .2s
+		}
+
+		.slaask-button.slaask-mini.slaask-opened .slaask-button-cross {
+			opacity: 1
+		}
+
+		.slaask-button.slaask-mini.slaask-opened #messages-counter {
+			display: none
+		}
+
+		.slaask-button .slaask-button-image {
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			border-width: 0;
+			position: absolute;
+			bottom: -1px !important;
+			right: -1px !important;
+			width: calc(100% + 2px) !important;
+			height: calc(100% + 2px) !important;
+			cursor: pointer;
+			background-position: center;
+			opacity: 1;
+			background-color: #fff
+		}
+
+		.slaask-button .slaask-button-cross {
+			opacity: 0;
+			position: absolute;
+			z-index: 1;
+			display: inline-block;
+			background-color: rgba(20, 20, 20, .8);
+			transition-duration: .3s;
+			cursor: pointer;
+			width: 100%;
+			bottom: -1px !important;
+			right: -1px !important;
+			width: calc(100% + 2px) !important;
+			height: calc(100% + 2px) !important;
+			height: 100%;
+			font-size: 0;
+			border-radius: 50%
+		}
+
+		.slaask-button .slaask-button-cross svg {
+			width: 30%;
+			height: 30%;
+			margin: 35%;
+			transition-duration: .2s
+		}
+
+		.slaask-button.slaask-opened .slaask-button-cross svg {
+			transform: scale(1)
+		}
+
+		.slaask-button.slaask-opened .slaask-button-cross:hover svg {
+			transform: scale(1.1)
+		}
+
+		.slaask-button.slaask-opened .slaask-button-cross:active svg {
+			transform: scale(.8)
+		}
+
+		.slaask-button:not(.slaask-opened) .slaask-pulsing-button span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none
+		}
+
+		.slaask-button:not(.slaask-opened) .slaask-pulsing-button span::before {
+			-webkit-animation: 2s cubic-bezier(.25, .46, .45, .94) 0s normal forwards infinite running slaask-boomerman;
+			animation: 2s cubic-bezier(.25, .46, .45, .94) 0s normal forwards infinite running slaask-boomerman
+		}
+
+		.slaask-button:not(.slaask-opened) .slaask-pulsing-button span::after,
+		.slaask-button:not(.slaask-opened) .slaask-pulsing-button span::before {
+			bottom: 0;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+			border-radius: 50%
+		}
+
+		.slaask-button:not(.slaask-opened) .slaask-pulsing-button span::after {
+			-webkit-animation: 2s cubic-bezier(.25, .46, .45, .94) .4s normal forwards infinite running slaask-boomerman;
+			animation: 2s cubic-bezier(.25, .46, .45, .94) .4s normal forwards infinite running slaask-boomerman
+		}
+
+		.slaask-button #messages-counter {
+			position: absolute;
+			padding: 0;
+			margin: 0;
+			z-index: 9999999999999;
+			list-style: none;
+			top: -3px;
+			right: -3px;
+			height: 22px;
+			width: 22px;
+			line-height: 22px;
+			background: #fc576b;
+			color: #fff;
+			font-size: 1.5rem;
+			font-weight: 700;
+			border-radius: 50%;
+			text-indent: 0;
+			transition: transform .2s .5s
+		}
+
+		.slaask-button #messages-counter li {
+			color: #fff;
+			font-size: 14px;
+			padding: 0 !important;
+			position: absolute;
+			transform: translateZ(0);
+			left: 50%;
+			top: 50%;
+			bottom: auto;
+			right: auto;
+			transform: translateX(-50%) translateY(-50%)
+		}
+
+		.slaask-button #messages-counter li:last-of-type {
+			visibility: hidden
+		}
+
+		.slaask-button #messages-counter.update-count li:last-of-type {
+			-webkit-animation: slaask-cd-qty-enter .15s;
+			animation: slaask-cd-qty-enter .15s;
+			-webkit-animation-direction: forwards;
+			animation-direction: forwards
+		}
+
+		.slaask-button #messages-counter.update-count li:first-of-type {
+			-webkit-animation: slaask-cd-qty-leave .15s;
+			animation: slaask-cd-qty-leave .15s;
+			-webkit-animation-direction: forwards;
+			animation-direction: forwards
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		.slaask-message {
+			font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+			padding: 20px;
+			font-size: 14px;
+			cursor: pointer
+		}
+
+		.slaask-message .slaask-message-text {
+			width: 100%;
+			position: relative
+		}
+
+		.slaask-message .slaask-message-text b {
+			font-weight: 700;
+			font-size: 14px;
+			color: #444;
+			margin-bottom: 7px;
+			cursor: pointer
+		}
+
+		.slaask-message .slaask-message-text b span {
+			font-weight: 400;
+			color: #aaa
+		}
+
+		.slaask-message .slaask-message-text p {
+			line-height: 20px !important;
+			font-size: 14px !important;
+			margin: 0 !important;
+			padding-top: 0 !important;
+			margin-bottom: 10px !important;
+			font-weight: 400;
+			padding-bottom: 0 !important;
+			color: #444;
+			cursor: pointer
+		}
+
+		.slaask-message .slaask-message-text p:last-of-type {
+			margin-bottom: 0 !important
+		}
+
+		.slaask-message .slaask-message-text span.message-read-more {
+			position: absolute;
+			height: 20px;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			width: 100%;
+			text-align: right;
+			font-size: 14px;
+			line-height: 20px
+		}
+
+		.slaask-message .slaask-message-text .slaask-message-text-content {
+			max-height: 380px;
+			overflow: hidden;
+			margin-top: 10px;
+			line-height: 20px;
+			font-size: 14px
+		}
+
+		.slaask-message .slaask-message-text .slaask-message-text-content a {
+			pointer-events: none
+		}
+
+		.slaask-message .slaask-message-text .slaask-message-text-content a.slaask-btn {
+			pointer-events: all;
+			margin-top: 12px !important
+		}
+	</style>
+	<style type="text/css" class="slaask-style-sheet">
+		.slaask-gradient {
+			background: radial-gradient(ellipse at bottom right, rgba(29, 39, 54, .6) 0, rgba(29, 39, 54, 0) 72%)
+		}
+
+		.slaask-gradient.slaask-left {
+			left: 0 !important;
+			background: radial-gradient(ellipse at bottom left, rgba(29, 39, 54, .6) 0, rgba(29, 39, 54, 0) 72%) !important
+		}
+	</style>
+</head>
+
+<body class=""><noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="root">
+		<div class="App-home">
+			<div></div>
+			<header>
+				<div>
+					<div class="Header ">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<nav class="Header-nav">
+										<div class="Header-logoContainer" style="padding-top: 60px;">
+											<a class="Header-logo" href="https://www.rentassist.be/"><img
+													alt="Logo Rentassist" class="Header-logoImg" src="logo.png">
+												<h1 class="Header-baseline ">Rentassist, Airbnb concierge in Gent,
+													Brussel en Antwerpen</h1>
+											</a>
+										</div>
+										<!-- <div class="Header-navItems">
+											<a class="Header-login" href="../gent/">
+												<span>Gent</span>
+											</a>
+											<a class="Header-login" href="../brussel/">
+												<span>Brussel</span>
+											</a>
+											<a class="Header-login" href="../antwerpen/">
+												<span>Antwerpen</span>
+											</a>
+										</div> -->
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div class="Pricing" id="Pricing">
+					<h1 class="Pricing-title">Onze formules</h1>
+					<div class="PricingCards-container">
+						<div class="PricingCard-container">
+							<div class="PricingCard PricingCard-Shadow">
+								<div class="PricingCard-banner">Meest gekozen formule</div>
+								<div class="PricingCard-title-container">
+									<h2 class="PricingCard-title">Gegarandeerd inkomen</h2>
+								</div>
+								<div class="PricingCard-content">
+									<div class="PricingCard-content-amountYouEarn">
+										<p>U ontvange <br><span class="PricingCard-earn">een vast bedrag</span><br>dat wordt bepaald op basis van uw accomodatie</p>
+									</div>
+									<h2 class="PricingCard-title">Voordelen van gegarandeerd inkomen</h2>
+									<div>
+										<li>Bekend bedrag <strong>vóór verhuur</strong></li>
+										<li>Betaald <strong>bij aanvang</strong> van huur </li>
+										<li>Betaald of de accomodatie <strong>wordt verhuurd of niet</strong></li>
+										<li><strong>Geen risico</strong></li>
+									</div>
+									<div class="PricingCard-content-giveAmount"><svg class="PricingCard-content-logo">
+											<use xlink:href="https://www.hostnfly.com/static/media/sprite.83b0fb7b.svg#euro-pointer"
+												aria-hidden="true"></use>
+										</svg>
+										<div>
+											<p>Rentassist gerandeert u een <strong>extra budget<strong> voor uw reizen, weekends, vakanties</strong></strong></p>
+										</div>
+									</div>
+									<h2 class="PricingCard-title">Hoe betaalt Rentassist?</h2>
+									<div>
+										<p>De inkomsten die we <strong>garanderen</strong> komen overeen met <strong>la
+												het marktgemiddelde</strong> voor accomodatie met kenmerken (adres, grootte, capaciteit, enzovoort.) die vergelijkbaar zijn met die van u. <strong>We zullen proberen meer geld te genereren dan de inkomsten die aan u zijn gegarandeerd en we zullen een vergoeding ontvangen als we slagen.
+												</strong></p>
+									</div>
+									<hr>
+									<div class="PricingCard-content-Review-container"><img
+											src="https://www.hostnfly.com/static/media/Julie.7ce5f751.jpg"
+											alt="Reviewer" class="PricingCard-content-img">
+										<div>
+											<div><i>«&nbsp;Rentassist huurde mijn appartement vorig jaar voor een lang skiweekend: ik ontving mijn gegarandeerde inkomen van € 153 aan het begin van mijn 3-daagse verhuur. Plots kon ik een deel van mijn verblijf financieren! &nbsp;»</i></div>
+											<p><strong>Julie, eigenaar in Gent</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="PricingCard-container">
+							<div class="PricingCard ">
+								<div class="PricingCard-title-container">
+									<h2 class="PricingCard-title">Reëel inkomen</h2>
+								</div>
+								<div class="PricingCard-content">
+									<div class="PricingCard-content-amountYouEarn">
+										<p>U ontvangt <br><span class="PricingCard-earn">tussen de 70% en 77%
+											</span><br>van de omzet die daadwerkelijk wordt gegenereerd door reserveringen</p>
+									</div>
+									<h2 class="PricingCard-title">Voordelen van reëel inkomen</h2>
+									<div>
+										<li><strong>Mogelijk voordeliger</strong> dan gegarandeerd inkomen (bijv. laagseizoen, weinig tijd over voor uw vertrek, enz.)</li>
+										<li>Mogelijkheid om <strong>een minimale</strong> huurprijs per nacht in te stellen
+										</li>
+										<li><strong>Gemaximaliseerd inkomen</strong> dankzij de dagelijkse variatie in de prijzen van uw overnachtingen
+											de vos nuitées</li>
+									</div>
+									<div class="PricingCard-content-giveAmount"><svg class="PricingCard-content-logo">
+											<use xlink:href="https://www.hostnfly.com/static/media/sprite.83b0fb7b.svg#euro-pointer"
+												aria-hidden="true"></use>
+										</svg>
+										<div>
+											<p>Rentassist betaalt u deze inkomsten aan het einde van de huur, zodat u <strong>uw inkomsten kunnen aanvullen</strong></p>
+										</div>
+									</div>
+									<h2 class="PricingCard-title">Hoe betaalt Rentassist?</h2>
+									<div>
+										<p>Wij nemen een <strong>commissie</strong> op de reserveringen.
+											<strong>Tussen 23% en 30%,</strong> afhankelijk van het aantal toevertrouwde nachten :</p>
+										<ul class="list-no-points">
+											<li><strong>30%</strong><span>minder dan 13 nachten</span></li>
+											<li><strong>25%</strong><span>tussen 14 en 60 nachten</span></li>
+											<li><strong>23%</strong><span>meer dan 2 maanden</span></li>
+										</ul>
+									</div>
+									<hr>
+									<div class="PricingCard-content-Review-container"><img
+											src="https://www.hostnfly.com/static/media/Romain.e6a5b85f.jpg"
+											alt="Reviewer" class="PricingCard-content-img">
+										<div>
+											<div><i>« Na een paar gegarandeerde huurinkomsten, verzamelde ik veel positieve opmerkingen over mijn advertentie en verkreeg ik de SuperHost-status, wat de aantrekkelijkheid van mijn appartement verhoogde. Ik kies nu voor het reële inkomen waarmee ik een goede winstgevendheid kan genereren. De laatste keer ontving ik 80% van de € 1.650 gegenereerd door 3 weken huur, of € 1.320 na aftrek van de commissie.&nbsp;»</i></div>
+											<p><strong>Romain, eigenaar in Gent</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="PricingCard PricingCard-goodToKnow">
+						<p><strong>Goed om te weten :</strong> uw keuze tussen gegarandeerd inkomen en reëel inkomen wordt pas gemaakt na ondertekening van uw Rentassist-contract, rechtstreeks vanuit uw persoonlijke ruimte</p>
+					</div>
+					<div class="Pricing-button-container"><a href="schatting.htm" type="" id=""
+							class="Button Pricing-button null ">Schat mijn inkomsten</a></div>
+					<div></div>
+					<div class="container"></div>
+				</div>
+			</main>
+			<section class="Footer">
+					<div class="container">
+						<div class="Footer-section row middle-md between-md">
+							<div class="col-xs-12 col-md-5"></div>
+							<div class="col-xs-12 col-md-3">
+								<ul class="Footer-socialList">
+									<li class="Footer-socialListItem"><a href="https://www.facebook.com/rentassistbelgium"
+											rel="noopener noreferrer" target="_blank" class="Footer-socialListLink"><svg
+												class="Footer-socialIcon">
+												<use xlink:href="../static/media/sprite.6a3b6bd6.svg#facebook"
+													aria-hidden="true"></use>
+											</svg></a></li>
+									<li class="Footer-socialListItem"><a href="https://www.instagram.com/rentassist.be/"
+											rel="noopener noreferrer" target="_blank" class="Footer-socialListLink"><svg
+												class="Footer-socialIcon">
+												<use xlink:href="../static/media/sprite.6a3b6bd6.svg#instagram"
+													aria-hidden="true"></use>
+											</svg></a></li>
+									<!-- <li class="Footer-socialListItem"><a
+											href="https://www.pinterest.fr/hostnfly/?eq=hostnf&amp;etslf=6150"
+											rel="noopener noreferrer" target="_blank" class="Footer-socialListLink"><svg
+												class="Footer-socialIcon">
+												<use xlink:href="../static/media/sprite.6a3b6bd6.svg#pinterest"
+													aria-hidden="true"></use>
+											</svg></a></li> -->
+									<!-- <li class="Footer-socialListItem"><a href="https://twitter.com/HostnFly"
+											rel="noopener noreferrer" target="_blank" class="Footer-socialListLink"><svg
+												class="Footer-socialIcon">
+												<use xlink:href="../static/media/sprite.6a3b6bd6.svg#twitter"
+													aria-hidden="true"></use>
+											</svg></a></li> -->
+								</ul>
+							</div>
+						</div>
+						<div class="Footer-section row between-md">
+							<div class="col-xs-12 col-md-4">
+								<h3 class=""><img id="rentassist-logo" class="Header-logo"
+										src="logo.png" alt="Rentassist"></h3>
+								<p class="Footer-text"><span>Rentassist is meer dan alleen een Airbnb-conciërge.
+										Rentassist biedt volledig beheer van uw pand door zorg te dragen
+										van alle logistiek met betrekking tot Airbnb verhuur (schoonmaak, ontvangst van reizigers,
+										onderhoud ...) en het maximaliseren van uw inkomsten. </span></p>
+							</div>
+							<!-- <div class="col-xs-12 col-md-2 col-md-offset-1">
+								<div>
+									<h3 class="Footer-title"><span>Tout savoir sur Hostnfly</span></h3>
+									<ul class="Footer-list">
+										<li><a class="Footer-link"
+												href="https://www.rentassist.be/offres-de-revenus"><span>Tarifs</span></a>
+										</li>
+										<li><a class="Footer-link" href="https://www.rentassist.be/team"><span>Qui
+													sommes-nous ?</span></a></li>
+										<li><a class="Footer-link" href="https://hostnfly.welcomekit.co/" target="_blank"
+												without="true" rel="noopener noreferrer"><span>Nous rejoindre</span></a>
+										</li>
+										<li><a class="Footer-link"
+												href="https://www.rentassist.be/privacy"><span>Confidentialité</span></a>
+										</li>
+										<li><a class="Footer-link" href="https://www.rentassist.be/legal"><span>Mentions
+													légales</span></a></li>
+										<li><a class="Footer-link" href="https://www.rentassist.be/terms"><span>Conditions
+													d’utilisation</span></a></li>
+									</ul>
+								</div>
+							</div> -->
+							<div class="col-xs-12 col-md-2">
+								<div>
+									<h3 class="Footer-title"><span>Meer info?</span></h3>
+									<ul class="Footer-list">
+										<li><a class="Footer-link"
+												href="voorstel.htm"><span>Onze tarieven</span></a></li>
+										<li><a class="Footer-link"
+												href="schatting.htm"><span>Schat mijn inkomsten</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-2">
+								<div>
+									<h3 class="Footer-title"><span>Wilt u contact opnemen?</span></h3>
+									<ul class="Footer-list">
+										<li><a class="Footer-link --grey"
+												href="mailto:info@rentassist.be"><span>info@rentassist.be</span></a></li>
+										<li><span>Of kom langs :</span><span class="Footer-text"><span>Begijnengracht 53, 9000 Gent</span></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<ul class="Footer-cityMenu">
+									<li class="Footer-cityMenuItem"><a class="Footer-cityMenuLink"
+										href="javascript:;"><span>Vind onze Airbnb-conciërge dienst in</span>&nbsp;De Panne</a></li>
+									<li class="Footer-cityMenuItem"><a class="Footer-cityMenuLink"
+											href="javascript:;"><span>Vind onze Airbnb-conciërge dienst in</span>&nbsp;Gent</a></li>
+									<li class="Footer-cityMenuItem"><a class="Footer-cityMenuLink"
+											href="javascript:;"><span>Vind onze Airbnb-conciërge dienst in</span>&nbsp;Antwerpen</a></li>
+									<li class="Footer-cityMenuItem"><a class="Footer-cityMenuLink"
+										href="javascript:;"><span>Vind onze Airbnb-conciërge dienst in</span>&nbsp;Brussel</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@latest/dist/typeit.min.js"></script>
+	<script>
+		new TypeIt('.HeroPanel-titleSwitcher', {
+			strings: ["vakanties", "expatriëring", "wereldreis", "zakenreizen"],
+			breakLines: false,
+			speed: 100,
+			cursor: true,
+			loop: true,
+			afterString: (step, queue, instance) => {
+				instance.pause(3000).empty();
+			},
+		}).go();
+	</script>
+</body>
+
+</html>

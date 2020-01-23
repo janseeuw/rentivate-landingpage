@@ -6256,9 +6256,6 @@ input::-webkit-outer-spin-button {
 
 @media(min-width:768px) {
     .PricingCard-container {
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        width: 40%;
         margin: 0 auto
     }
 
